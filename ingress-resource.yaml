@@ -17,17 +17,17 @@ spec:
                 name: patient-record-service
                 port:
                   number: 80
-          - path: /api/v1/contributor-management-service
+          - path: /api/v1/appointment-scheduling-service
             pathType: Prefix
             backend:
               service:
-                name: contributor-management-service
+                name: appointment-scheduling-service
                 port:
                   number: 80
-          - path: /api/v1/commit-management-service
+          - path: /api/v1/notification-service
             pathType: Prefix
             backend:
               service:
-                name: commit-management-service
+                name: notification-service
                 port:
                   number: 80
