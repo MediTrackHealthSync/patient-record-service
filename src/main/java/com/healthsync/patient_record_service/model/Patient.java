@@ -14,6 +14,7 @@ public class Patient {
 
     @Id
     private String id;
+    private String patientId;
     private String name;
     private int age;
     private String gender;

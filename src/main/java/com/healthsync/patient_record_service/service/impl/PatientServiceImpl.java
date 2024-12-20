@@ -34,6 +34,7 @@ public class PatientServiceImpl implements PatientService {
     public Patient updatePatient(String id, Patient patient) {
         Patient existingPatient = getPatientById(id);
         existingPatient.setName(patient.getName());
+        existingPatient.setPatientId(patient.getPatientId());
         existingPatient.setAge(patient.getAge());
         existingPatient.setGender(patient.getGender());
         existingPatient.setContactNumber(patient.getContactNumber());
