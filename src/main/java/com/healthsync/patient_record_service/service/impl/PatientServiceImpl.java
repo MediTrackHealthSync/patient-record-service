@@ -39,8 +39,8 @@ public class PatientServiceImpl implements PatientService {
         existingPatient.setContactNumber(patient.getContactNumber());
         existingPatient.setAddress(patient.getAddress());
         existingPatient.setMedicalHistory(patient.getMedicalHistory());
-        existingPatient.setPrescriptions(patient.getPrescriptions());
-        existingPatient.setLabResults(patient.getLabResults());
+        existingPatient.setPrescription(patient.getPrescription());
+        existingPatient.setLabTest(patient.getLabTest());
         return patientRepository.save(existingPatient);
     }
 

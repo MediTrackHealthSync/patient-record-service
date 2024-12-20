@@ -6,8 +6,6 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
-
 @Setter
 @Getter
 @Data
@@ -21,8 +19,8 @@ public class Patient {
     private String gender;
     private String contactNumber;
     private String address;
-    private List<String> medicalHistory;
-    private List<String> prescriptions;
-    private List<String> labResults;
+    private String medicalHistory;
+    private String prescription;
+    private String labTest;
 
 }
